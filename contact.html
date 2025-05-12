@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TimelyCraft</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="sticky-header">
+  <div class="container">
+    <a href="index.html" class="logo">TimelyCraft</a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="product.html">View Products</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <input type="text" placeholder="Search..." aria-label="Search">
+
+      <a href="wishlist.html" class="icon-link">
+        <i class="fa-solid fa-heart"></i>
+        <span>Wishlist</span>
+      </a>
+
+      <a href="cart.html" class="icon-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="contact-form">
+    <h1>Contact Us</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Join Our Newsletter</h4>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="discount-note">Get 10% off your first order</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong>We Accept</strong></p>
+    <div id="paymentMethods"></div>
+  </div>
+</footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

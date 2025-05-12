@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | TimelyCraft</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="sticky-header">
+  <div class="container">
+    <a href="index.html" class="logo">TimelyCraft</a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="product.html">View Products</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <input type="text" placeholder="Search..." aria-label="Search">
+
+      <a href="wishlist.html" class="icon-link">
+        <i class="fa-solid fa-heart"></i>
+        <span>Wishlist</span>
+      </a>
+
+      <a href="cart.html" class="icon-link">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Cart</span>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="product-details">
+    <div class="product-images">
+      <img
+        src="https://img.freepik.com/free-photo/beautiful-rendering-steel-object_23-2151897654.jpg?ga=GA1.1.958911878.1730032087&semt=ais_hybrid&w=740"
+        alt="Elegant Men's Watch"
+      />
+    </div>
+    <div class="product-info">
+      <h1>Elegant Men's Watch</h1>
+      <p class="price">$99.99</p>
+      <p class="description">
+        This elegant men's watch features a sleek design with a leather strap and quartz movement.
+      </p>
+      <form class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          value="1"
+          min="1"
+          required
+        />
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.add-to-cart-form');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const productName = document.querySelector('.product-info h1').innerText;
+      const productPrice = document.querySelector('.price').innerText;
+      const quantity = document.getElementById('quantity').value;
+
+      alert(`Added to cart:\n${productName}\nQuantity: ${quantity}\nPrice: ${productPrice}`);
+          });
+  });
+</script>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Join Our Newsletter</h4>
+      <form>
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="discount-note">Get 10% off your first order</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p><strong>We Accept</strong></p>
+    <div id="paymentMethods"></div>
+  </div>
+</footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
